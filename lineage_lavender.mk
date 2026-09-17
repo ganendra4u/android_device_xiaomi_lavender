@@ -42,3 +42,36 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
+
+# AVIUM_VERSION_APPEND_TIME_OF_DAY is a boolean flag to indicate
+# whether to append time of day to the build date.
+AVIUM_VERSION_APPEND_TIME_OF_DAY ?= true
+# Maintainer
+# AVIUM_MAINTAINER is a string that represents the maintainer of the build.
+AVIUM_MAINTAINER ?= Ganendra1945
+
+# Settings
+# Soc model name
+AVIUM_SETTINGS_SOC_MODEL_NAME ?= Snapdragon660
+# Device code name
+AVIUM_SETTINGS_DEVICE_CODENAME ?= lavender
+
+# GMS
+# WITH_GMS is a boolean flag to indicate 
+# whether to include Google Mobile Services (GMS) in the build.
+WITH_GMS ?= false
+# LatinIMEGooglePrebuilt
+# Only works on vanilla builds,
+# GMS builds will use the Google IME from GMS.
+TARGET_INCLUDE_GOOGLEIME ?= false
+TARGET_GOOGLEIME_OVERRIDE_IME ?= false
+
+# Spoof Props
+# Set to true to enable spoofing fake props.
+# For letting apps think they are running on a locked device.
+AVIUM_FORCE_SET_FAKE_PROP ?= true
+
+# Blur Effect
+# The blur usually enabled on Android 16 QPR2.
+# If the blur not enabled, set to true to force enable blur for SystemUI.
+TARGET_FORCE_ENABLE_BLUR ?= false
