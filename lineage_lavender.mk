@@ -25,7 +25,7 @@
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -34,7 +34,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=lavender
 
 # Device identifier
-PRODUCT_NAME := lineage_lavender
+PRODUCT_NAME := shinkai_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
@@ -42,3 +42,6 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
+
+#ShinkaiFlag
+SHINKAI_MAINTAINER := ganx0000
